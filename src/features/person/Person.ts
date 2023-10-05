@@ -14,8 +14,11 @@ export class Person extends Base {
   private lastName!: string;
   public age?: number;
 
-  @inject()
+  @inject("magento")
   private PersonService!: PersonService;
+
+  @inject("shop", "PersonService")
+  private ShopPersonService!: PersonService;
 
   constructor(personDto: TPerson) {
     super(personDto.born);
@@ -28,5 +31,9 @@ export class Person extends Base {
 
   getPersonId() {
     return this.PersonService.getPersonId();
+  }
+
+  getPersonShopId() {
+    return this.ShopPersonService.getPersonId();
   }
 }

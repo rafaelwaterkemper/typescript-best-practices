@@ -7,3 +7,4 @@ const data =
 const rafa: Person = personDto.fromJson(data);
 console.log(rafa.getFullName());
 console.log(rafa.getPersonId());
+console.log(rafa.getPersonShopId());

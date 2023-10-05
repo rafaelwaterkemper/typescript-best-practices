@@ -12,10 +12,15 @@ export class FlyWay {
   }
 }
 
-export function inject(qualifier?: any) {
+export function inject(qualifier?: any, service?: string) {
   console.log(`qualifier is ${qualifier}`);
 
   return function (target: any, propertyKey: string) {
+    if (service) {
+      target[propertyKey] = FlyWay.getImpl(service, qualifier);
+      return;
+    }
+
     target[propertyKey] = FlyWay.getImpl(propertyKey, qualifier);
   };
 }
