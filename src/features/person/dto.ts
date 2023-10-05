@@ -1,4 +1,4 @@
-import { Person } from "./Person.model";
+import { Person } from "./Person";
 
 export const fromJson = (json: string): Person => {
   return new Person({ ...JSON.parse(json)});

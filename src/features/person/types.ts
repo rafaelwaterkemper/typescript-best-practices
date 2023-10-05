@@ -7,3 +7,8 @@ export type TPerson = {
     lastName: string;
     age: number;
 } & TBase;
+
+
+export interface PersonService {
+    getPersonId(): string;
+}

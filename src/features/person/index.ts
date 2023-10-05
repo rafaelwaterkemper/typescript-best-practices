@@ -1,2 +1,2 @@
-export * from './Person.dto'
-// export * from './Person.model'
+export * from "./dto";
+export * from "./Person";

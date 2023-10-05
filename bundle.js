@@ -1,0 +1,1 @@
+class e{constructor(e){Object.assign(this,{born:e})}}class s extends e{constructor(e){super(e.born),Object.assign(this,e)}getFullName(){return`${this.firstName} ${this.lastName}`}}const a=(t='{"firstName":"Rafael","lastName":"Waterkemper","age":27, "born": "nova Veneza"}',new s({...JSON.parse(t)}));var t;console.log(a.getFullName());
