@@ -1,4 +1,4 @@
-import { FlyWay as FlyWeight } from "../decorators/injector";
+import { FlyWeight as FlyWeight } from "../decorators/injector";
 import { MagentoPersonServiceImpl } from "./service.magento";
 import { ShopPersonServiceImpl } from "./service.shop";
 

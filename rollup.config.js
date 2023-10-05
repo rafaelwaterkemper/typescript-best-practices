@@ -8,7 +8,7 @@ const baseConfig = createBasicConfig();
 delete baseConfig.output.dir;
 
 export default merge(baseConfig, {
-    input: './out-tsc/src/App.js',
+    input: './out-tsc/src/app.js',
     output: {
         file: 'dist/bundle.js'
     },

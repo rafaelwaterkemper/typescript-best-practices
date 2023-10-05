@@ -1,4 +1,4 @@
-import { Person } from "./Person";
+import { Person } from "./person";
 
 export const fromJson = (json: string): Person => {
   return new Person({ ...JSON.parse(json)});
